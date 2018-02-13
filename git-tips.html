@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <meta charset="utf-8"/>
+        <title>Tech Tips</title>
+        <link rel="icon" type="image/png" href="images/test-tube.png">
+    </head>
+    <body>
+        <header>
+            <h1>Tech Tips</h1>
+            <nav>
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="bio.html">Bio</a></div>
+                <div class="dropdown">
+                    <div class="nav-item">Tech Tips</div>
+                    <div class="dropdown-content">
+                        <a href="git-tips.html">Git Tips</a>
+                        <a href="unix-tips.html">Unix Tips</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>My Amazing Git Cheat Sheet</h1>
+                <img src="images/tree.jpg"
+                    alt="Tree"
+                    class="shrinkable"
+                    width="1000">
+                <h3>Setting Up a Repo</h3>
+                <ol>
+                    <li><code>cd</code> to the directory where you want the git repository to be</li>
+                    <li><code>git status</code> (do this to ensure you don't already have a git repository)</li>
+                    <li><code>git init</code></li>
+                    <li>Create a new repository in Bitbucket or GitHub</li>
+                    <li><code>git remote add origin [your-remote-repo-url]</code></li>
+                    <li><code>git add .</code></li>
+                    <li><code>git commit -m "first commit"</code></li>
+                    <li><code>git push -u origin master</code></li>
+                </ol>
+                <h3>Commands to Remember</h3>
+                <p>Some of the following descriptions were taken from the 
+                    <a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">
+                        GitHub Git Cheat Sheet
+                    </a>.
+                </p>
+                <div>
+                    <div>fetch [remote-shortname]</div>
+                    <div>Fetches all new data from the specified remote without merging</div>
+                </div>
+                <div>
+                    <div>push [remote-shortname] [branch]</div>
+                    <div>Attempts to push to the specified remote branch. Note that adding the <code>-u</code> argument 
+                        will also set up argumentless <code>git pull</code> for that branch
+                    </div>
+                </div>
+                <div>
+                    <div>merge [branch]</div>
+                    <div>Attempts to merge specified branch with the current branch. Note that to merge a remote branch 
+                        that has been fetched we run <code>git fetch remotename/branchname</code>.
+                    </div>
+                </div>
+                <div>
+                    <div>reset [commit]</div>
+                    <div>Changes HEAD to point to specified commit (the branch that HEAD was already pointing to stays 
+                        the same). Next, it updates the index to match the commit where the new HEAD is pointing to. It 
+                        does not change the contents of the working directory.
+                    </div>
+                </div>
+                <div>
+                    <div>reset --hard [commit]</div>
+                    <div>Does the same as <code>git reset</code> but also changes the contents of the working directory to 
+                        match the specified commit. This will cause any uncommitted changes to be lost.
+                    </div>
+                </div>
+                <div>
+                    <div>branch</div>
+                    <div>Lists all branches</div>
+                </div>
+                <div>
+                    <div>checkout -b [new-branch]</div>
+                    <div>Creates a new branch and checks it out</div>
+                </div>
+                <div>
+                    <div>checkout [branch]</div>
+                    <div>Switches HEAD to point to the specified branch</div>
+                </div>
+                <div>
+                    <div>branch -d [branch]</div>
+                    <div>Deletes the specified branch</div>
+                </div>
+                <div>
+                    <div>stash</div>
+                    <div>Temporarily stores all modified tracked files to a stack</div>
+                </div>
+                <div>
+                    <div>stash pop</div>
+                    <div>Applies the stash and deletes it from the stack</div>
+                </div>
+                <div>
+                    <div>stash list</div>
+                    <div>Lists all stashes stored</div>
+                </div>
+                <div>
+                    <div>rm --cached [file]</div>
+                    <div>Removes the specified file from version control without deleting the local file</div>
+                </div>
+                <div>
+                    <div>status</div>
+                    <div>Lists all new or modified files to be committed</div>
+                </div>
+                <div>
+                    <div>diff</div>
+                    <div>Lists file differences not yet staged</div>
+                </div>
+                <div>
+                    <div>remote -v</div>
+                    <div>Lists the names and URLs of all your remote handles</div>
+                </div>
+                <div>
+                    <div>remote add [remote-shortname] [your-remote-repo-url]</div>
+                    <div>Adds a new remote with the specified info</div>
+                </div>
+                <div>
+                    <div>remote remove [remote-shortname]</div>
+                    <div>Removes all information about a remote</div>
+                </div>
+            </article>
+            <aside>
+                <div>
+                    <img src="images/cube.jpg" alt="Rubik's Cube" width="300">
+                </div>
+                <div>
+                    <img src="images/board.jpg" alt="Circuit Board" width="300">
+                </div>
+                <div>
+                    <img src="images/code.jpg" alt="Code" width="300">
+                </div>
+                <div>
+                    <img src="images/computer.jpg" alt="Computer" width="300">
+                </div>
+                <div>
+                    <img src="images/chess.jpg" alt="Chess" width="300">
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <span>Copyright 2018 Andrew Aposhian</span>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <meta charset="utf-8"/>
+        <title>Tech Tips</title>
+        <link rel="icon" type="image/png" href="images/test-tube.png">
+    </head>
+    <body>
+        <header>
+            <h1>Tech Tips</h1>
+            <nav>
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="bio.html">Bio</a></div>
+                <div class="dropdown">
+                    <div class="nav-item">Tech Tips</div>
+                    <div class="dropdown-content">
+                        <a href="git-tips.html">Git Tips</a>
+                        <a href="unix-tips.html">Unix Tips</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Useful Commands in Unix</h1>
+                <img src="images/command-prompt.png"
+                    alt="Command Prompt"
+                    class="shrinkable"
+                    width="800">
+                <h3>grep</h3>
+                <p>
+                    Grep stands for globally search for regex and print. Use the command to simply search for a string as 
+                    <code>grep stringtofind</code> and then include any other arguments. It can 
+                    be run simply to search in the current directory or it can be run as 
+                    <code>grep stringtofind <em>somedir/filename</em></code> to search a specific file for a string.
+                    Additional arguments are listed in the table below with brief descriptions about their
+                    behaviors.
+                </p>
+                <div>
+                    <div>-r</div>
+                    <div>Recursively - use this when searching a directory for example: <code><em>.</em></code> (the current directory)</div>
+                </div>
+                <div>
+                    <div>-i</div>
+                    <div>Ignore case of letters</div>
+                </div>
+                <div>
+                    <div>-w</div>
+                    <div>Ignore substrings</div>
+                </div>
+                <div>
+                    <div>-l</div>
+                    <div>Only list the file names where the matches occur</div>
+                </div>
+                <div>
+                    <div>-I</div>
+                    <div>Ignore binary files</div>
+                </div>
+                <div>
+                    <div>-n</div>
+                    <div>Print line numbers</div>
+                </div>
+                <div>
+                    <div>--include=*.html</div>
+                    <div>Search only files with the .html extension (could be another extension)</div>
+                </div>
+                <h3>cat</h3>
+                <p>
+                    Cat is short for concatenate. It can be used in this manner: 
+                    <code>cat file1.txt file2.txt file3.txt > out-file.txt</code>. Note that <code>></code> 
+                    overwrites <code>out-file.html</code> whereas <code>>></code> does not.
+                </p>
+                <div>
+                    <div>cat * > out-file.txt</div>
+                    <div>Concatenates all files in the current directory</div>
+                </div>
+                <div>
+                    <div>cat *.txt >> out-file.txt</div>
+                    <div>Concatenates all files in the current directory with the specified file extension (in this case .txt)</div>
+                </div>
+                <h3>rmdir</h3>
+                <p><code>rmdir</code> can be used to remove an empty directory</p>
+            </article>
+            <aside>
+                <div>
+                    <img src="images/cube.jpg" alt="Rubik's Cube" width="300">
+                </div>
+                <div>
+                    <img src="images/board.jpg" alt="Circuit Board" width="300">
+                </div>
+                <div>
+                    <img src="images/code.jpg" alt="Code" width="300">
+                </div>
+                <div>
+                    <img src="images/computer.jpg" alt="Computer" width="300">
+                </div>
+                <div>
+                    <img src="images/chess.jpg" alt="Chess" width="300">
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <span>Copyright 2018 Andrew Aposhian</span>
+        </footer>
+    </body>
+</html>
